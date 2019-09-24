@@ -3,10 +3,9 @@
 package mimetype
 
 import (
+	"github.com/joykk/mimetype/internal/matchers"
 	"io"
 	"os"
-
-	"github.com/gabriel-vasile/mimetype/internal/matchers"
 )
 
 // Detect returns the MIME type and extension of the provided byte slice.
