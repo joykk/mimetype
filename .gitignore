@@ -4,4 +4,4 @@ main
 log
 etc/*.cfg
 .github
-gosum
+go.sum
