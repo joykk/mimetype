@@ -162,6 +162,9 @@ func GeoJson(in []byte) bool {
 		return false
 	}
 	in = trimLWS(in)
+	if len(in) == 0 {
+		return false
+	}
 	// geojson is always an object
 	if in[0] != '{' {
 		return false
