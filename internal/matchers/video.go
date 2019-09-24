@@ -52,7 +52,7 @@ func Flv(in []byte) bool {
 
 // Mpeg matches a Moving Picture Experts Group file.
 func Mpeg(in []byte) bool {
-	return bytes.HasPrefix(in, []byte{0x00, 0x00, 0x01}) &&
+	return len(in) > 3 && bytes.HasPrefix(in, []byte{0x00, 0x00, 0x01}) &&
 		in[3] >= 0xB0 && in[3] <= 0xBF
 }
 
