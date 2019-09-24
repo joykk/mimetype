@@ -1,1 +1,1 @@
-module github.com/joykk/mimetype
+module github.com/joykk/mimetype.git
